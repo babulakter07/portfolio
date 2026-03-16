@@ -261,7 +261,7 @@ function Skills() {
               { name: 'LeetCode',      icon: '🟡', id: 'mdbabulpust',  solved: '381+',  url: 'https://leetcode.com/u/mdbabulpust/' },
               { name: 'Codeforces',    icon: '🔵', id: 'Babul420',     solved: '913+',  url: 'https://codeforces.com/profile/Babul420' },
               { name: 'Codeforces',    icon: '🔵', id: 'rjbabul2017',  solved: '106+',  url: 'https://codeforces.com/profile/rjbabul2017' },
-              { name: 'UVA OJ',        icon: '🟣', id: 'rjbabul420',   solved: '253+',  url: 'https://uhunt.onlinejudge.org/id/rjbabul420' },
+              { name: 'UVA OJ',        icon: '🟣', id: 'rjbabul420',   solved: '253+',  url: 'https://uhunt.onlinejudge.org/id/900205' },
               { name: 'GeeksforGeeks', icon: '🟢', id: 'rjbabul420',   solved: '73+',   url: 'https://www.geeksforgeeks.org/user/rjbabul420/' },
               { name: 'HackerRank',    icon: '🟩', id: 'Log_Out23',    solved: '88+',   url: 'https://www.hackerrank.com/profile/Log_Out23' },
               { name: 'Toph.co',       icon: '🔴', id: 'Cyber_hunter', solved: '71+',   url: 'https://toph.co/u/Cyber_hunter' },
