@@ -533,19 +533,66 @@ img { max-width: 100%; }
   margin-top: 16px;
 }
 
-.judge-tag {
-  padding: 6px 16px;
-  background: rgba(0,180,216,0.08);
+.judge-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+  text-align: left;
+}
+
+.judge-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--bg);
   border: 1px solid var(--border);
-  border-radius: 6px;
-  font-size: 0.85rem;
-  color: var(--text-muted);
+  border-radius: 10px;
+  text-decoration: none;
   transition: all 0.2s;
 }
 
-.judge-tag:hover {
+.judge-card:hover {
   border-color: var(--primary);
+  background: rgba(0,180,216,0.06);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,180,216,0.1);
+}
+
+.judge-card-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.judge-card-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.judge-card-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.judge-card-id {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: 'Fira Code', monospace;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.judge-card-solved {
+  font-size: 0.95rem;
+  font-weight: 800;
   color: var(--primary);
+  font-family: 'Fira Code', monospace;
+  flex-shrink: 0;
 }
 
 /* Experience */

@@ -253,11 +253,27 @@ function Skills() {
           <p style={{color:'var(--text-muted)', fontSize:'0.875rem', marginTop:'8px'}}>
             Consistently solving algorithmic challenges across multiple platforms
           </p>
-          <span className="judge-highlight">1,800+</span>
-          <p style={{color:'var(--text-muted)', fontSize:'0.9rem'}}>Problems Solved on Online Judges</p>
-          <div className="judge-platforms">
-            {['LeetCode', 'Codeforces', 'UVA', 'Toph.co', 'GeeksforGeeks', 'HackerRank'].map(p => (
-              <span className="judge-tag" key={p}>{p}</span>
+          <span className="judge-highlight">1,873+</span>
+          <p style={{color:'var(--text-muted)', fontSize:'0.9rem'}}>Total Problems Solved on Online Judges</p>
+
+          <div className="judge-cards">
+            {[
+              { name: 'LeetCode',      icon: '🟡', id: 'rjbabul420',   solved: '381+',  url: 'https://leetcode.com/u/rjbabul420/' },
+              { name: 'Codeforces',    icon: '🔵', id: 'Babul420',     solved: '913+',  url: 'https://codeforces.com/profile/Babul420' },
+              { name: 'Codeforces',    icon: '🔵', id: 'rjbabul2017',  solved: '106+',  url: 'https://codeforces.com/profile/rjbabul2017' },
+              { name: 'UVA OJ',        icon: '🟣', id: 'rjbabul420',   solved: '253+',  url: 'https://uhunt.onlinejudge.org/id/rjbabul420' },
+              { name: 'GeeksforGeeks', icon: '🟢', id: 'rjbabul420',   solved: '73+',   url: 'https://www.geeksforgeeks.org/user/rjbabul420/' },
+              { name: 'HackerRank',    icon: '🟩', id: 'Log_Out23',    solved: '88+',   url: 'https://www.hackerrank.com/profile/Log_Out23' },
+              { name: 'Toph.co',       icon: '🔴', id: 'Cyber_hunter', solved: '71+',   url: 'https://toph.co/u/Cyber_hunter' },
+            ].map((j, i) => (
+              <a className="judge-card" href={j.url} target="_blank" rel="noreferrer" key={i}>
+                <span className="judge-card-icon">{j.icon}</span>
+                <div className="judge-card-info">
+                  <span className="judge-card-name">{j.name}</span>
+                  <span className="judge-card-id">@{j.id}</span>
+                </div>
+                <span className="judge-card-solved">{j.solved}</span>
+              </a>
             ))}
           </div>
         </div>
