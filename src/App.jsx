@@ -46,11 +46,11 @@ function Hero() {
         <div className="hero-text">
           <span className="hero-greeting fade-in fade-in-delay-1">👋 Hello, World! I'm</span>
           <h1 className="hero-name fade-in fade-in-delay-2">Md. Babul Akter</h1>
-          <p className="hero-title fade-in fade-in-delay-3">Software Engineer · Team Lead · Problem Solver</p>
+          <p className="hero-title fade-in fade-in-delay-3">Software Engineer · Architectural Design · Database Design</p>
           <p className="hero-desc fade-in fade-in-delay-4">
-            Passionate software engineer with 3+ years of experience building scalable enterprise applications
-            using ASP.NET Core, Angular, and cloud technologies. Currently leading the Reconciliation module
-            at TechnoNext Software Ltd.
+            Software Engineer with 3+ years of experience in full-stack development and system architecture.
+            Currently focused on <strong style={{color:'#00b4d8'}}>architectural & database design</strong> for OTA booking systems at TechnoNext Software Ltd —
+            designing scalable schemas, reviewing team designs, and driving system enhancements based on deep OTA business domain knowledge.
           </p>
 
           <div className="hero-stats fade-in fade-in-delay-4">
@@ -135,8 +135,10 @@ function About() {
               platform and led the development of a critical Reconciliation module as Team Lead.
             </p>
             <p>
-              I am deeply committed to clean code, SOLID principles, and Domain-Driven Design.
-              An active competitive programmer with <strong style={{color:'#fff'}}>1,800+ problems</strong> solved
+              Currently focused on <strong style={{color:'#fff'}}>architectural and database design</strong> — leading the design of booking ticket flows,
+              fare configurations, and related OTA schemas. I actively review team database designs,
+              leveraging deep OTA business domain knowledge to ensure systems are scalable, efficient, and enhancement-ready.
+              An active competitive programmer with <strong style={{color:'#fff'}}>1,873+ problems</strong> solved
               across LeetCode, Codeforces, and other platforms.
             </p>
             <div className="about-details">
@@ -172,10 +174,10 @@ function About() {
               </div>
             </div>
             <div className="info-card">
-              <span className="info-icon">👨‍💼</span>
+              <span className="info-icon">🏗️</span>
               <div>
-                <h4>Team Lead – Reconciliation Module</h4>
-                <p>Leading the development and implementation of a critical financial reconciliation system at TechnoNext.</p>
+                <h4>Architectural & Database Design</h4>
+                <p>Designing booking ticket flow schemas and OTA configurations. Reviewing team database designs using deep OTA business domain expertise.</p>
               </div>
             </div>
             <div className="info-card">
@@ -301,28 +303,42 @@ function Experience() {
                   <span className="badge-current">🟢 Current</span>
                 </div>
               </div>
-              <p className="timeline-role">Jr. Software Engineer · Team Lead</p>
+              <p className="timeline-role">Software Engineer · Architectural Design · Team Lead</p>
               <p className="timeline-period">📅 January 2024 – Present · Dhaka, Bangladesh</p>
               <div className="timeline-projects">
+
                 <div className="project-detail">
-                  <h4>✈️ Online Travel Agency (OTA)</h4>
+                  <h4>🏗️ Architectural & Database Design (Current Focus)</h4>
                   <ul>
-                    <li>Developed airplane ticketing platform using ASP.NET Core, Angular, and MSSQL</li>
-                    <li>Implemented real-time features with <strong>SignalR</strong> for live ticket updates</li>
-                    <li>Enhanced system performance using <strong>Multithreading</strong> and ThreadLock mechanisms</li>
-                    <li>Built secure REST APIs with <strong>JWT Token-based Authentication</strong></li>
-                    <li>Collaborated in Agile teams for high-quality feature delivery</li>
-                    <li>Authored complex T-SQL queries and Stored Procedures in MSSQL</li>
+                    <li>Contributing to the <strong>architectural design</strong> of the OTA system, focusing on scalability and maintainability</li>
+                    <li>Leading <strong>database design</strong> for the complete booking ticket flow — from search and reservation to issuance and post-booking configurations</li>
+                    <li>Designing relational schemas for <strong>ticket configuration, fare rules, ancillaries, and booking states</strong> in MSSQL</li>
+                    <li>Leveraging deep knowledge of <strong>OTA business logic</strong> to drive system enhancement decisions and propose optimized data models</li>
+                    <li>Conducting <strong>database design reviews</strong> for team members — evaluating schema efficiency, query performance, normalization, and indexing strategies</li>
+                    <li>Defining <strong>system enhancement roadmaps</strong> based on real-world OTA workflows and client requirements</li>
                   </ul>
                 </div>
+
+                <div className="project-detail">
+                  <h4>✈️ Online Travel Agency (OTA) – B2B Platform</h4>
+                  <ul>
+                    <li>Spearheaded full-stack development using <strong>.NET 8, Angular 13</strong>, and MSSQL for a high-traffic B2B OTA platform</li>
+                    <li>Served <strong>7 enterprise clients</strong> with a combined user base of over <strong>30,000</strong></li>
+                    <li>Implemented real-time booking updates using <strong>SignalR</strong>, reducing support queries significantly</li>
+                    <li>Optimized back-end performance using <strong>Multithreading & ThreadLock</strong>, reducing ticket processing time by <strong>40%</strong></li>
+                    <li>Built secure REST APIs with <strong>JWT Token-based Authentication</strong></li>
+                  </ul>
+                </div>
+
                 <div className="project-detail">
                   <h4>🔄 Reconciliation Module (Team Lead)</h4>
                   <ul>
-                    <li>Leading development of a critical financial reconciliation system for OTA</li>
-                    <li>Automates reconciliation of purchase and sales tickets for audit accuracy</li>
-                    <li>Managing team and coordinating implementation of the entire module</li>
+                    <li>Designed and led a mission-critical <strong>automated financial reconciliation engine</strong> for airline ticketing</li>
+                    <li>Reduced manual auditing effort by <strong>60%</strong> through end-to-end reconciliation of purchase and sales transactions</li>
+                    <li>Mentored <strong>3+ junior developers</strong>, conducted code reviews, and managed technical roadmaps</li>
                   </ul>
                 </div>
+
               </div>
             </div>
           </div>
