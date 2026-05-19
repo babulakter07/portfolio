@@ -46,11 +46,12 @@ function Hero() {
         <div className="hero-text">
           <span className="hero-greeting fade-in fade-in-delay-1">👋 Hello, World! I'm</span>
           <h1 className="hero-name fade-in fade-in-delay-2">Md. Babul Akter</h1>
-          <p className="hero-title fade-in fade-in-delay-3">Software Engineer · Team Lead · Problem Solver</p>
+          <p className="hero-title fade-in fade-in-delay-3">Software Engineer · Database Design</p>
           <p className="hero-desc fade-in fade-in-delay-4">
-            Passionate software engineer with 3+ years of experience building scalable enterprise applications
-            using ASP.NET Core, Angular, and cloud technologies. Currently leading the Reconciliation module
-            at TechnoNext Software Ltd.
+            Software Engineer with 3+ years of experience in full-stack development and system architecture.
+            Currently focused on database design for OTA booking systems at TechnoNext Software Ltd —
+            designing scalable schemas, reviewing team designs, and driving system enhancements based on
+            deep OTA business domain knowledge.
           </p>
 
           <div className="hero-stats fade-in fade-in-delay-4">
