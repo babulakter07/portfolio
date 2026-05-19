@@ -63,7 +63,7 @@ function Hero() {
               <span className="stat-label">Problems Solved</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">5+</span>
+              <span className="stat-number">8+</span>
               <span className="stat-label">Projects</span>
             </div>
           </div>
@@ -216,11 +216,11 @@ function Skills() {
     },
     {
       icon: '☁️', title: 'DevOps & Cloud',
-      tags: ['AWS', 'Docker', 'Redis', 'RabbitMQ', 'Hangfire', 'Serilog']
+      tags: ['AWS', 'Docker', 'Redis', 'Distributed Redis', 'Distributed Lock', 'RabbitMQ', 'Hangfire', 'Serilog']
     },
     {
       icon: '🏗️', title: 'Architecture & Patterns',
-      tags: ['SOLID', 'MVC', 'DDD', 'CQRS', 'Microservices', 'Repository Pattern', 'Generic Repository']
+      tags: ['SOLID', 'MVC', 'DDD', 'CQRS', 'Microservices', 'Multi-Tenant Architecture', 'Idempotency', 'Repository Pattern', 'Generic Repository']
     },
     {
       icon: '📐', title: 'Engineering Practices',
@@ -307,6 +307,32 @@ function Experience() {
                     <li>Managing team and coordinating implementation of the entire module</li>
                   </ul>
                 </div>
+                <div className="project-detail">
+                  <h4>🔗 Common OTA – B2B &amp; B2C Platform Integration</h4>
+                  <ul>
+                    <li>Unified B2B and B2C business flows into a single <strong>multi-tenant</strong> OTA platform, eliminating duplicated codebases</li>
+                    <li>Designed multi-tenant architecture with per-tenant config isolation and tenant-aware data access layers</li>
+                    <li>Applied <strong>Distributed Locking</strong> (Redis RedLock) to prevent race conditions during concurrent seat/ticket booking</li>
+                    <li>Implemented <strong>Idempotency keys</strong> on booking and payment APIs to safely handle retries and prevent duplicate processing</li>
+                  </ul>
+                </div>
+                <div className="project-detail">
+                  <h4>🐘 Database Migration – MSSQL → PostgreSQL</h4>
+                  <ul>
+                    <li>Built a custom <strong>ETL project</strong> (ASP.NET Core) to extract, transform, and load all data from MSSQL into PostgreSQL</li>
+                    <li>Converted all <strong>MSSQL stored procedures</strong> to <strong>PostgreSQL functions</strong> (PL/pgSQL), resolving T-SQL syntax and type mismatches</li>
+                    <li>Migrated complete schema — tables, indexes, constraints, sequences, and views</li>
+                    <li>Updated all <strong>Dapper</strong> queries to PostgreSQL positional ($1) syntax; validated with regression tests confirming zero data loss</li>
+                  </ul>
+                </div>
+                <div className="project-detail">
+                  <h4>📡 Distributed Redis Logging</h4>
+                  <ul>
+                    <li>Implemented centralized distributed logging pipeline using <strong>Redis Streams</strong> as the transport layer across microservices</li>
+                    <li>Integrated <strong>Serilog</strong> sinks to push structured logs into Redis, consumed and forwarded to a central log store</li>
+                    <li>Reduced log-loss risk during service restarts by persisting logs in Redis before forwarding</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -361,6 +387,24 @@ function Projects() {
       title: 'Reconciliation System',
       desc: 'Financial reconciliation automation system for auditing purchase and sales tickets. Led as Team Lead with full module ownership.',
       tech: ['ASP.NET Core', 'MSSQL', 'Angular', 'Agile'],
+    },
+    {
+      icon: '🔗',
+      title: 'Common OTA – B2B & B2C Integration',
+      desc: 'Unified B2B and B2C business flows into a single multi-tenant OTA platform. Implemented Distributed Locking (Redis RedLock) and Idempotency keys for safe concurrent booking and duplicate-free microservice APIs.',
+      tech: ['ASP.NET Core', 'Angular', 'Redis', 'Multi-Tenant', 'Distributed Lock', 'Idempotency'],
+    },
+    {
+      icon: '🐘',
+      title: 'Database Migration – MSSQL → PostgreSQL',
+      desc: 'Built a custom ETL project to migrate the full OTA database from MSSQL to PostgreSQL. Converted all stored procedures to PL/pgSQL functions and updated the entire Dapper data access layer with zero data loss.',
+      tech: ['ASP.NET Core', 'PostgreSQL', 'MSSQL', 'ETL', 'PL/pgSQL', 'Dapper'],
+    },
+    {
+      icon: '📡',
+      title: 'Distributed Redis Logging',
+      desc: 'Centralized distributed logging pipeline using Redis Streams as the transport layer across microservice instances. Integrated Serilog sinks for structured log persistence and forwarding.',
+      tech: ['Redis Streams', 'Serilog', 'ASP.NET Core', 'Microservices'],
     },
     {
       icon: '🔀',
@@ -439,16 +483,16 @@ function Education() {
     {
       icon: '📚',
       degree: 'Higher Secondary Certificate (HSC) – Science',
-      institution: 'Mawlana Saif Uddin Yahia College',
+      institution: 'Mawlana Saif Uddin Yahia Degree College, Shahjadpur, Sirajganj',
       year: '2016',
-      grade: 'GPA: 5.00 / 5.00',
+      grade: 'GPA: 5.00 / 5.00 · Board: Rajshahi',
     },
     {
       icon: '🏫',
       degree: 'Secondary School Certificate (SSC) – Science',
-      institution: 'Habibullah Nagor High School',
+      institution: 'Habibullah Nagar High School',
       year: '2013',
-      grade: 'GPA: 5.00 / 5.00',
+      grade: 'GPA: 5.00 / 5.00 · Board: Rajshahi · Roll: 423343',
     },
   ]
 
