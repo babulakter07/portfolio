@@ -219,10 +219,6 @@ function Skills() {
       tags: ['AWS', 'Docker', 'Redis', 'Distributed Redis', 'Distributed Lock', 'RabbitMQ', 'Hangfire', 'Serilog']
     },
     {
-      icon: '🏗️', title: 'Architecture & Patterns',
-      tags: ['SOLID', 'MVC', 'DDD', 'CQRS', 'Microservices', 'Multi-Tenant Architecture', 'Idempotency', 'Repository Pattern', 'Generic Repository']
-    },
-    {
       icon: '📐', title: 'Engineering Practices',
       tags: ['Algorithm & DS', 'UML Diagrams', 'JWT Auth', 'Multithreading', 'Agile', 'Waterfall', 'SDLC']
     },
